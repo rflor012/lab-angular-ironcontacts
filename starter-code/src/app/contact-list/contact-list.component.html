@@ -7,26 +7,22 @@
   </div>
 </div>
 
-
-
-
-
-
 <div>
-  <label for="contact-name"></label>
+  <label for="contact-name">Contact Name:</label>
   <input #name type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
-  <label for="contact-email"></label>
+  <label for="contact-email">Contact Email:</label>
   <input #email type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
-  <label for="contact-phone"></label>
+  <label for="contact-phone">Contact Phone:</label>
   <input #phone type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
-  <label for="contact-image"></label>
+  <label for="contact-image">Contact Image:</label>
   <input #image type="text" [(ngModel)]="newContact.image">
 </div>
-
-<button (click)="addContact(name, email, phone, image)">Submit New Contact</button>
+<form action="submit">
+<button (click)="addContact()">Submit New Contact</button>
+</form>
